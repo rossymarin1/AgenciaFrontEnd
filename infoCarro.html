@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="practica2.css">
+    <title>Sale</title>
+</head>
+<body>
+    <div>   
+        <navbar>
+            <ul class="navbar">
+                <div>
+                    <a href="generalAutos.html"><li class="ul_nav"><button class="button_header">Home</button></li></a>
+                    <a href="registroVenta.html"><li class="ul_nav ml"><button class="button_header">Sale</button></li></a>
+                </div>
+                <div>
+                    <a href="generalAutos.html"><li  class="ul_nav mr"><button class="button_header">Log In</button></li></a>
+                    <a href="registroUsuario.html"><li class="ul_nav mr"><button class="button_header">Sign Up</button></li></a>
+                </div>
+            </ul>
+        </navbar>
+    </div> 
+
+    <div class="contenedor"> 
+        <div  class="column-20 ml-10por mt">
+            <h1>Toyota Supra 2021</h1>
+        </div>
+        <div class="form">
+        <div class="row ml-10por">
+            <div class="column-20">
+                <a href="marcasAutos.html"><button class="button_body mt-20"><img alt="Toyota" src="https://http2.mlstatic.com/D_NQ_NP_911553-MLM44687151811_012021-O.webp"></button></a>
+                <button class="button_body mt"><img alt="Volkswagen" src="https://http2.mlstatic.com/D_NQ_NP_2X_828866-MLM44687179258_012021-F.webp"></button>
+            </div>
+
+            <div class="column-20">
+                <button class="button_body mt-20"><img alt="Mitsubishi" src="https://http2.mlstatic.com/D_NQ_NP_748075-MLM44687156248_012021-O.webp"></button>
+                <button class="button_body mt"><img alt="Audi" src="https://http2.mlstatic.com/D_NQ_NP_2X_813311-MLM44687169706_012021-F.webp"></button>
+            </div> 
+        </div> 
+
+        <div class="column-2" style="background-color: rgb(195, 203, 241);"> 
+            <fieldset>
+            <legend>Ficha Tecnica</legend>  
+            <div class="row-form ml-10">
+                <div class="column-8">
+                    <label for="marca">Marca:</label>
+                </div>
+                <div class="column-8">
+                    <input type="text" id="marca" name="marca" class="input" value="Toyota" disabled>
+                </div>
+            </div>
+            <div class="row-form ml-10">
+                <div class="column-2">
+                    <label for="modelo">Modelo:</label>
+                </div>
+                <div class="column-8">
+                    <input type="text" id="modelo" name="modelo" class="input" value="Supra" disabled>
+                </div>
+            </div> 
+            <div class="row-form ml-10">
+                <div class="column-8">
+                    <label for="año">Año:</label>
+                </div>
+                <div class="column-8">
+                    <input type="text" id="año" name="año" class="input" value="2021" disabled>
+                </div>
+            </div>
+            <div class="row-form ml-10">
+                <div class="column-8">
+                    <label for="color">Color:</label>
+                </div>
+                <div class="column-8" style="background-color: #9b9b9b;">
+                    <input type="color" id="color" name="color" class="input" value="#9b9b9b" disabled>
+                </div>
+            </div>
+            <div class="row-form ml-10">
+                <div class="column-8">
+                    <label for="transmision">Transmision:</label>
+                </div>
+                <div class="column-8">
+                    <input type="text" id="transmision" name="transmision" class="input" value="Automatica" disabled>
+                </div>
+            </div>
+            <div class="row-form ml-10">
+                <div class="column-8">
+                    <label for="precio">Precio:</label>
+                </div>
+                <div class="column-8">
+                    <input type="text" id="precio" name="precio" class="input" value="$1,274,900" disabled>
+                </div>
+            </div>
+        </fieldset>
+        </div>     
+    </div> 
+    <details close class="mt-20 ml-30por" >
+        <summary class="text-left">Datos del Vendedor</summary>
+        <div class="row-form ml-10">
+            <div class="column-2">
+                <label for="nombre">Nombre:</label>
+            </div>
+            <div class="column-2">
+                <input type="text" id="nombre" name="nombre" class="input" value="Rosaura Marin" disabled>
+            </div>
+        </div>
+        <div class="row-form ml-10">
+            <div class="column-2">
+                <label for="numero">Numero:</label>
+            </div>
+            <div class="column-2">
+                <input type="number" id="numero" name="numero" class="input" value="7151093801" disabled>
+            </div>
+        </div> 
+        <div class="row-form ml-10">
+            <div class="column-2">
+                <label for="email">Email:</label>
+            </div>
+            <div class="column-2 mb">
+                <input type="email" id="email" name="email" class="input" value="rosymarin2431@gmail.com" disabled>
+            </div>
+        </div> 
+    </details> 
+    <div class="footer">
+		<h4></h4>
+	</div>
+</body>
+</html>

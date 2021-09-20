@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Usuario</title>
-	<link rel="stylesheet" type="text/css" href="practica2.css">
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="practica2.css">
+    <title>Ventas</title>
 </head>
 <body>
-	<div class="contenedor">
+    <div class="contenedor">
 		<div>   
             <navbar>
                 <ul class="navbar">
@@ -24,7 +25,7 @@
 
 		<div class="column-15" >
 			<h2>Menu</h2>
-			<h3>Usuario</h3>
+			<h3>Ventas</h3>
 			<ul>
 				<li><a href="#">Registro</a></li>
 				<li><a href="consultar.html">Consultar</a></li>
@@ -32,91 +33,85 @@
 		</div>
 		<div class="row-form ml-15por mt-20">
 			<div class="column-70 mt ml">
-				<h1>Registro Personal</h1>
+				<h1>Registrar Venta</h1>
 			</div>
 			<div class="column-70 mt-20">
 				<div class="row-form mt-10">
 					<div class="column-2 text-right mmt-5">
-						<label for="nombre">Nombre:</label>
+						<label for="marca">Marca:</label>
 					</div>
 					<div class="column-2">
-						<input type="text" id="nombre" name="nombre" class="input" placeholder="Type here">
+						<input type="text" id="marca" name="marca" class="input" placeholder="Type here" autocomplete="on">
 					</div>
 
 					<div class="column-2 text-right mmt-5">
-						<label for="fecha">Fecha de Nacimiento:</label>
+						<label for="modelo">Modelo:</label>
 					</div>
 					<div class="column-2">
-						<input type="date" id="fecha" name="fecha" class="input">
+						<input type="text" id="modelo" name="modelo" class="input" placeholder="Type here">
 					</div>
 				</div>
 
 				<div class="row-form mt-5">
 					<div class="column-2 text-right mmt-5">
-						<label for="ap">Apellido Paterno:</label>
+						<label for="transmision">Transmision:</label>
 					</div>
 					<div class="column-2">
-						<input type="text" id="ap" name="ap" class="input" placeholder="Type here">
+						<input type="text" id="transmision" name="transmision" class="input" placeholder="Type here">
 					</div>
 					
 					<div class="column-2 text-right mmt-5">
-						<label for="edad">Edad:</label>
+						<label for="año">Año:</label>
 					</div>
 					<div class="column-2">
-						<input type="number" id="edad" name="edad" class="input" placeholder="Type here">
+						<input type="number" id="año" name="año" class="input" placeholder="Type here">
+					</div>
+				</div>
+
+				<div class="row-form mt-5">
+					<div class="column-2 text-right">
+						<label for="color">Color:</label>
+					</div>
+					<div class="column-2">
+						<input type="color" id="color" name="color" class="input" placeholder="Type here">
+					</div>
+
+					<div class="column-2 text-right">
+						<label for="puertas">Puertas:</label>
+					</div>
+					<div class="column-2 mt-5">
+						<input type="number" name="puertas" id="puertas" class="input" placeholder="Type here">
+					</div>
+				</div>
+
+				<div class="row-form mt-5">
+					<div class="column-2 text-right">
+						<label for="combustible">Tipo de Combustible:</label>
+					</div>
+					<div class="column-2">
+						<input type="combustible" name="combustible" id="combustible" class="input" placeholder="Type here">
+					</div>
+					<div class="column-2 text-right">
+						<label for="motor">Motor:</label>
+					</div>
+					<div class="column-2">
+						<input type="motor" name="motor" id="motor" class="input" placeholder="Type here">
 					</div>
 				</div>
 
 				<div class="row-form mt-5">
 					<div class="column-2 text-right mmt-5">
-						<label for="am">Apellido Materno:</label>
+						<label for="km">Kilometros:</label>
 					</div>
 					<div class="column-2">
-						<input type="text" id="am" name="am" class="input" placeholder="Type here">
-					</div>
-
-					<div class="column-1 text-center mt-5">
-						<label for="sexo">Sexo:</label>
-					</div>
-					<div class="column-3 mt-5">
-						<input type="radio" name="sexo" id="femenino">
-						<label>Femenino</label> 
-						<input type="radio" name="sexo" id="masculino">
-						<label>Masculino</label> 
-					</div>
-				</div>
-
-				<div class="row-form mt-5">
-					<div class="column-2 text-right mmt-5">
-						<label for="email">Email:</label>
-					</div>
-					<div class="column-2">
-						<input type="email" name="email" id="email" class="input" placeholder="Type here">
-					</div>
-					<div class="column-2 text-right mmt-5">
-						<label for="num">Numero:</label>
-					</div>
-					<div class="column-2">
-						<input type="number" name="num" id="num" class="input" placeholder="Type here">
-					</div>
-				</div>
-
-				<div class="row-form mt-5">
-					<div class="column-2 text-right mmt-5">
-						<label for="pass">Contraseña</label>
-					</div>
-					<div class="column-2">
-						<input type="Password" id="pass" name="pass" minlength="8" maxlength="12" class="input" placeholder="Type here" aria-describedby="help">
-						<div id="help" class="form-text" minlength="5" maxlength="30">
-						  Debe contener 8-12 digitos.
-						</div>
+						<input type="number" id="km" name="km" class="input" placeholder="Type here">
 					</div>
 					
 					<div class="column-2 text-right mmt-5">
-						<label for="pass">Foto de Perfil</label>
+						<label for="foto">Foto</label>
 					</div>
 					<div class="column-2">
-						<input type="file" id="imagen" name="imagen" accept=".png" aria-describedby="help">
+						<input type="file" id="foto" name="foto" accept=".png" aria-describedby="help">
 						<div id="help" class="form-text">
 						  Formatos permitidos: png.
 						</div>
@@ -124,41 +119,41 @@
 				</div>
 
 				<details open class="mt-20">
-					<summary class="text-center">Direccion</summary>
+					<summary class="text-center">Datos para Compradores</summary>
+					<div class="row-form mt-5">
+						<div class="column-2 text-right">
+							<label for="nombre">Nombre:</label>
+						</div>
+						<div class="column-2">
+							<input type="text" name="nombre" id="nombre" class="input" placeholder="Type here">
+						</div>
+						<div class="column-2 text-right">
+							<label for="ap">Apellidos:</label>
+						</div>
+						<div class="column-2">
+							<input type="text" name="ap" id="colonia" placeholder="Type here" class="input">
+						</div>
+					</div>
 					<div class="row-form mt-5">
 						<div class="column-2 text-right">
 							<label for="domicilio">Domicilio:</label>
 						</div>
 						<div class="column-2">
-							<input type="text" name="domicilio" id="domicilio" class="input" placeholder="(Calle y numero)" minlength="10" maxlength="50">
+							<input type="text" name="domicilio" id="domicilio" class="input" placeholder="Type here">
 						</div>
 						<div class="column-2 text-right">
-							<label for="colonia">Colonia:</label>
+							<label for="telefono">Telefono:</label>
 						</div>
 						<div class="column-2">
-							<input type="text" name="colonia" id="colonia" placeholder="Type here" class="input" maxlength="30">
+							<input type="text" name="telefono" id="telefono" placeholder="Type here" class="input">
 						</div>
 					</div>
 					<div class="row-form mt-5">
 						<div class="column-2 text-right">
-							<label for="ciudad">Ciudad:</label>
+							<label for="email">Email:</label>
 						</div>
 						<div class="column-2">
-							<input type="text" name="ciudad" id="ciudad" class="input" placeholder="Type here" maxlength="30">
-						</div>
-						<div class="column-2 text-right">
-							<label for="estado">Estado:</label>
-						</div>
-						<div class="column-2">
-							<input type="text" name="estado" id="estado" placeholder="Type here" class="input" maxlength="30">
-						</div>
-					</div>
-					<div class="row-form mt-5">
-						<div class="column-2 text-right">
-							<label for="cp">C.P.:</label>
-						</div>
-						<div class="column-2">
-							<input type="text" name="cp" id="cp" class="input" placeholder="Type here" minlength="5">
+							<input type="email" name="email" id="email" class="input" placeholder="Type here">
 						</div>
 						<div class="column-2 text-right">&nbsp;</div>
 					</div>
@@ -203,6 +198,5 @@
 	<div class="footer">
 		<h4></h4>
 	</div>
-		
 </body>
 </html>

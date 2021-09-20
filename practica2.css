@@ -15,7 +15,11 @@ body{
     background-image: url(https://data.whicdn.com/images/316146387/original.jpg?t=1531781996);
     background-attachment: fixed
 }
-
+.form{
+  display:flex;
+  justify-content: center;
+  width: 80%;
+}
 navbar{
     position: fixed;
     width: 100%;
@@ -33,9 +37,8 @@ navbar{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+    margin: auto;
     margin-top: 25px;
-    width:100%;
-   
     overflow: hidden;
 }
 
@@ -44,13 +47,12 @@ navbar{
 	flex-direction: row;
 	flex-wrap: wrap;
     margin-top: 25px;
-    margin-left: 15%;
     overflow: hidden;
 }
 
 .column-20{
 	flex: 0 0 20%;
-	max-width: 20%;
+    margin-left: 20px;
     box-shadow: 3px;
 }
 
@@ -150,6 +152,16 @@ button:hover{
     bottom: 0;
 }
 
+fieldset:hover{ 
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+summary:hover{ 
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
 .column-1{
 	flex: 0 0 12.5%;
 	max-width: 12.5%;
@@ -200,43 +212,38 @@ button:hover{
 .mt-20{ margin-top: 20px; }
 
 .btn-principal{
-	background-color: blue;
-	border: 1px solid blueviolet;
-	color: white;
+	background-color: rgb(202, 205, 221);
+    font: bold;
+	color: rgb(14, 7, 119);
 }
 
 .input, .boton{
 	height: 30px;
 	width: 100%;
-	border: 1px solid #ccc;
+	border: 2px solid rgb(25, 4, 82);
 	border-radius: 5px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
-.text-center{ text-align: center; }
-.text-right{ text-align: right; }
-.text-left{ text-align: left; }
-.justify-text{ text-align: justify; }
+.input{
+    background-color:rgb(51, 51, 99);
+    Color:rgb(255, 255, 255);
+}
+label{
+    font: optional bold;
+    font-size: 20px;
+}
+
+input:hover{ 
+    background-color:rgb(97, 6, 33);
+    Color:rgb(255, 255, 255);
+    transition: all 1s;
+}
 
 summary{ font-size: 1.5rem;}
 
 textarea{ 
-	width: 100%
-}
-
-@media (max-width: 600px){ /*cambio de tamaño en pantalla*/
-	.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8{
-		flex: 0 0 100%;
-		max-width: 100%;
-	}
-
-	.text-right{
-		text-align: left;
-	}
-
-	.mmt-5{
-		margin-top: 5px;
-	}
+	width: 100%;
 }
 
 .ml{margin-left: 20px;}
@@ -245,28 +252,14 @@ textarea{
 .mt-5{ margin-top: 5px; }
 .mt-10{ margin-top: 10px; }
 .mt-20{ margin-top: 20px; }
-.mt-10{margin-top: 10px;}
 .mb{margin-bottom: 120px;}
 .ml-10por{ margin-left: 5%;}
 .ml-10por{ margin-left: 10%;}
 .ml-15por{ margin-left: 15%;}
+.ml-20por{ margin-left: 20%;}
+.ml-30por{ margin-left: 30%;}
 
 .text-center{ text-align: center; }
 .text-right{ text-align: right; }
 .text-left{ text-align: left; }
 .justify-text{ text-align: justify; }
-
-@media (max-width: 600px){ /*cambio de tamaño en pantalla*/
-	.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8{
-		flex: 0 0 100%;
-		max-width: 100%;
-	}
-
-	.text-right{
-		text-align: left;
-	}
-
-	.mmt-5{
-		margin-top: 5px;
-	}
-}
